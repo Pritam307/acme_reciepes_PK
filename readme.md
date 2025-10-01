@@ -24,6 +24,9 @@ git clone <repo-url>
 cd acme_recipes
 ```
 
+> **ℹ️ This app is deployed at:**  
+> [http://155.248.255.247:9091/](http://155.248.255.247:9091/)
+
 ### 2. Install dependencies
 ```bash
 pip install -r requirements.txt
