@@ -19,7 +19,7 @@ from django.urls import path,include
 from django.views.decorators.csrf import csrf_exempt
 from graphene_django.views import GraphQLView
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-
+from django.conf.urls.static import static
 
 # Swagger
 from rest_framework import permissions
@@ -52,4 +52,4 @@ urlpatterns = [
     # GraphQL endpoint (we will make sure GraphiQL is disabled in production; for dev you can enable)
     path("graphql/", csrf_exempt(GraphQLView.as_view(graphiql=settings.GRAPHQL_ENABLE_GRAPHIQL))),
 
-]
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
