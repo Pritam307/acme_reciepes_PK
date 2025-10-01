@@ -1,0 +1,11 @@
+Django>=4.2
+djangorestframework
+graphene-django
+django-filter
+django-cors-headers
+psycopg[binary]  # Postgres driver
+djangorestframework-simplejwt
+drf-yasg  # Swagger UI for DRF
+python-dotenv  # read .env files (optional)
+dj-database-url
+gunicorn
